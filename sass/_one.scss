@@ -1,0 +1,79 @@
+// responsive cite: max - 800px
+@media (max-width: 1024px) {
+    header {
+        width: 100%;
+        height: 100vh;
+        background-color: #333;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .header--img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .header-container {
+            @include container;
+            border: 1px solid rgba(255, 255, 255, 0.597);
+            border-radius: 5px;
+            padding: 40px 0;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+
+                label {
+                    font-size: 27px;
+                    font-weight: 600;
+                    color: white;
+                    font-family: $urbanis;
+                }
+
+                input {
+                    width: 95%;
+                    border: 1px solid rgba(255, 255, 255, 0.597);
+                    padding: 15px 0 15px 20px;
+                    background-color: transparent;
+                    font-family: $urbanis;
+                    color: rgba(255, 255, 255, 0.823);
+                    outline: none;
+                    font-size: 16px;
+                    border-radius: 5px;
+                }
+
+                .header__links {
+                    width: 90%;
+                    display: flex;
+                    justify-content: end;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-family: $urbanis;
+                    }
+                }
+
+                .header__btn{
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: rgba(255, 255, 255, 0.823);
+                    width: 95%;
+                    padding: 15px 0 15px 0;
+                    background-color: #018BFA;
+                    font-family: $urbanis;
+                    text-align: center;
+                    font-weight: 700;
+                    outline: none;
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
